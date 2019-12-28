@@ -2,6 +2,7 @@
   "name": "sap-listener",
   "version": "0.0.1",
   "description": "Listen for incoming sap messages",
+  "repository": "https://github.com/jonasohland/sap-receiver",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
