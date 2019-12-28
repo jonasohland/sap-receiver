@@ -1,11 +1,12 @@
 {
-  "name": "sap-listener",
+  "name": "sap-receive",
   "version": "0.0.1",
   "description": "Listen for incoming sap messages",
   "repository": "https://github.com/jonasohland/sap-receiver",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [
     "sap",
@@ -14,14 +15,19 @@
   "bin": {
     "sap-receive": "bin/cli.js"
   },
+  "files": [
+    "bin/*.js",
+    "build/*.js"
+  ],
   "author": "Jonas Ohland",
   "license": "MIT",
   "dependencies": {
-    "@types/commander": "^2.12.2",
-    "@types/node": "^13.1.1",
-    "@types/sdp-transform": "^2.4.1",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "sdp-transform": "^2.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "@types/sdp-transform": "^2.4.1"
   }
 }
