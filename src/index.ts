@@ -8,6 +8,7 @@ let prog = new program.Command();
 
 prog.option('-i, --interface <interface>', 'listen on this interface');
 prog.option('-d, --out-dir <output directory>', 'put sdp files here');
+prog.option('-k, --keep-files', 'dont delete sdp files when receiving delete messages')
 
 function _BV(bit: number)
 {
@@ -90,7 +91,7 @@ receiverSocket.on('message', data => {
         cyan(addrToString(source_addr))}`);
 
     if (options.msg_type) {
-        if (fs.existsSync(out_file)) fs.unlinkSync(out_file);
+        if (!(prog.keepFiles) && fs.existsSync(out_file)) fs.unlinkSync(out_file);
     }
     else
         fs.writeFileSync(out_file, payload);

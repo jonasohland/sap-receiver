@@ -11,7 +11,7 @@
     "sdp"
   ],
   "bin": {
-    "sap-listen": "bin/cli.js"
+    "sap-receive": "bin/cli.js"
   },
   "author": "Jonas Ohland",
   "license": "MIT",
