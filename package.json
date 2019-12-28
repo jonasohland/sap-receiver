@@ -1,0 +1,27 @@
+{
+  "name": "sap-listener",
+  "version": "0.0.1",
+  "description": "Listen for incoming sap messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sap",
+    "sdp"
+  ],
+  "bin": {
+    "sap-listen": "bin/cli.js"
+  },
+  "author": "Jonas Ohland",
+  "license": "MIT",
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^13.1.1",
+    "@types/sdp-transform": "^2.4.1",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "sdp": "^2.11.2",
+    "sdp-transform": "^2.13.0"
+  }
+}
