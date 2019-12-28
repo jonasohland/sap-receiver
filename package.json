@@ -22,7 +22,6 @@
     "@types/sdp-transform": "^2.4.1",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
-    "sdp": "^2.11.2",
     "sdp-transform": "^2.13.0"
   }
 }
