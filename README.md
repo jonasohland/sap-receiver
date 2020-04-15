@@ -3,7 +3,7 @@
 Install with
 
 ```bash
-$ npm i sap-receive
+$ npm i -g sap-receive
 ```
 
 And run with
